@@ -7,7 +7,7 @@ ctx.beginPath();
 ctx.strokestyle = color;
 ctx.lineWidth = 2;
 ctx.arc(200, 200, 40 ,0 , 2*Math.PI);
-ctxstroke(;
+ctx.stroke();
     
     canvas.addEventListener("mousedown", my_mousedown);
 
@@ -20,7 +20,7 @@ ctxstroke(;
      mouse_y = e.clientY - canvas.offsetTop;
 
      console.log("X = " + mouse_x + " ,Y = " + mouse_y);
-     circle(mouse_x , mouse_y)
+     circle(mouse_x , mouse_y);
     }
 
     function cicle(mouse_x , mouse_y)
@@ -29,7 +29,7 @@ ctxstroke(;
        ctx.strokestyle = color;
        ctx.lineWidth = 2;
        ctx.arc(mouse_x, mouse_y, 40 ,0 , 2*Math.PI);
-       ctx.strokestyle(); 
+       ctx.stroke(); 
     }
 
     function clearArea()
